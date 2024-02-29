@@ -10,7 +10,7 @@ describe("Test związany z zaznaczeniem select", () => {
     })
 
     it("Wybieranie filtra instock", () => {    
-         cy.get(`#selectProductSort`).select("In stock");//Select poznawa wybrac obiekt z listy który wpiszenmy w nawiasie (" co chcemy wybrać")
+         cy.get(`#selectProductSort`).select("In stock");//Select pozwala wybrać obiekt z listy który wpiszemy w nawiasie (" co chcemy wybrać")
          cy.get("#selectProductSort").should("have.value", "quantity:desc");// Wpisując "quantity:desc" odnosimy się do tego atrybutu, który chcemy otworzyć
         })
 
